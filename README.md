@@ -78,17 +78,17 @@ The scanning results are stored in an SQLite database and displayed through a we
 
 ## 🧰 Technologies Used
 
-| Technology                   | Purpose                            |
-| ---------------------------- | ---------------------------------- |
-| Python                       | Backend programming                |
-| Flask                        | REST API and web dashboard         |
-| JavaScript                   | Chrome Extension functionality     |
-| Chrome Extension Manifest V3 | Browser integration                |
-| HTML                         | Block page and dashboard structure |
-| Bootstrap                    | Dashboard styling                  |
-| SQLite                       | Scan history storage               |
-| VirusTotal API               | External URL threat intelligence   |
-| Requests                     | HTTP API communication             |
+| Technology | Purpose |
+|---|---|
+| Python | Backend programming |
+| Flask | REST API and web dashboard |
+| JavaScript | Chrome Extension functionality |
+| Chrome Extension Manifest V3 | Browser integration |
+| HTML | Block page and dashboard structure |
+| Bootstrap | Dashboard styling |
+| SQLite | Scan history storage |
+| VirusTotal API | External URL threat intelligence |
+| Requests | HTTP API communication |
 
 ## 📂 Project Structure
 
@@ -106,9 +106,6 @@ Browser-Malicious-URL-Guard/
 │   ├── background.js
 │   └── blocked.html
 │
-├── screenshots/
-│   └── dashboard.png
-│
 ├── README.md
 └── .gitignore
 ```
@@ -125,7 +122,7 @@ Browser-Malicious-URL-Guard/
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR-GITHUB-USERNAME/Browser-Malicious-URL-Guard.git
+git clone https://github.com/subaharini207/Browser-Malicious-URL-Guard.git
 ```
 
 ```bash
@@ -181,10 +178,10 @@ The dashboard displays URL scanning history and threat analysis results.
 ## 📊 Risk Classification
 
 | Risk Score | Classification |
-| ---------- | -------------- |
-| 0–24       | Safe           |
-| 25–59      | Suspicious     |
-| 60–100     | Malicious      |
+|---|---|
+| 0–24 | Safe |
+| 25–59 | Suspicious |
+| 60–100 | Malicious |
 
 Risk scores are calculated using the project's local detection rules and available VirusTotal report information.
 
@@ -235,11 +232,11 @@ This project is intended for educational and cybersecurity research purposes. It
 - Enhanced security analytics and dashboard visualizations.
 - Configurable allowlists and blocklists.
 
-## 👨‍💻AUTHOR&#x20;
+## 👨‍💻 Author
 
-V.SUBHAHARINI
+**V. SUBHAHARINI**
 
-Project: Browser Malicious URL Guard
+Project: Browser Malicious URL Guard  
 Category: Cybersecurity | Web Security | Phishing Detection
 
 ---
