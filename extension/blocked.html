@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Site Blocked - CyberShield Security</title>
+
+    <style>
+        body {
+            background: #1a0505;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        .box {
+            max-width: 600px;
+            margin: auto;
+            background: #2b0909;
+            border: 2px solid #ff4d4d;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #ff4d4d;
+        }
+
+        .meta {
+            background: #120303;
+            padding: 15px;
+            border-radius: 6px;
+            text-align: left;
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box">
+
+        <h1>ACCESS BLOCKED: MALICIOUS WEBSITE DETECTED</h1>
+
+        <p>
+            CyberShield prevented navigation to protect your credentials and device.
+        </p>
+
+        <div class="meta">
+
+            <p>
+                <strong>Blocked URL:</strong>
+                <span id="b_url"></span>
+            </p>
+
+            <p>
+                <strong>Threat Risk Score:</strong>
+                <span id="b_score"></span>/100
+            </p>
+
+            <p>
+                <strong>Detection Reason:</strong>
+                <span id="b_reasons"></span>
+            </p>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        const params = new URLSearchParams(window.location.search);
+
+        document.getElementById("b_url").textContent = params.get("url");
+
+        document.getElementById("b_score").textContent = params.get("score");
+
+        document.getElementById("b_reasons").textContent = params.get("reasons");
+
+    </script>
+
+</body>
+</html>
